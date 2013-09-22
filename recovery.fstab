@@ -1,22 +1,14 @@
-# Copyright (C) 2013 Simon Sickle <simon@simonsickle.com>
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-# GNU General Public License for more details.
-# You should have received a copy of the GNU General Public License
-# along with this program. If not, see <http://www.gnu.org/licenses/>.
+# Android fstab file. 
+# The filesystem that contains the filesystem checker binary (typically /system) cannot 
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK 
 
-# mount point	fstype		device		[device2]
-/boot 			emmc		/dev/block/mmcblk0p20  flags=display="Boot";backup=1;backupname=boot
-/cache			ext4		/dev/block/mmcblk0p34  flags=display="Cache";backup=1;wipeingui;wipeduringfactoryreset;backupname=cache;canencryptbackup=1
-/data			ext4		/dev/block/mmcblk0p35  flags=display="Data";backup=1;wipeingui;wipeduringfactoryreset;backupname=data;length=-16384;canencryptbackup=1;userdataencryptbackup=1
-/devlog			ext4		/dev/block/mmcblk0p25  flags=display="System Logs";backup=0;wipeduringfactoryreset
-/misc			emmc		/dev/block/mmcblk0p22  flags=display="Recovery";backup=0
-/recovery		emmc		/dev/block/mmcblk0p21  flags=display="Recovery";backup=0
-/sdcard			vfat		/dev/block/mmcblk1p1 /dev/block/mmcblk1  flags=display="External SDcard";storage;wipeingui;removable;backup=0;settingsstorage
-/system			ext4		/dev/block/mmcblk0p33  flags=display="System";backup=1;wipeingui;backupname=system
-/internal_sdcard        vfat            /dev/block/mmcblk0p36  flags=display="Internal SDcard";storage;wipeingui;backup=0
+#<src>     		<mnt_point>	<type>	<mnt_flags>	<fs_mgr_flags>
+/dev/block/mmcblk0p20	/boot		emmc	defaults	defaults
+/dev/block/mmcblk0p33   /system         ext4    defaults	wait
+/dev/block/mmcblk0p34	/cache		ext4	defaults	wait,check
+/dev/block/mmcblk0p35	/data		ext4	defaults	wait,check
+/dev/block/mmcblk0p25	/devlog		ext4	defaults	defaults
+/dev/block/mmcblk0p22	/misc		emmc	defaults	defaults
+/dev/block/mmcblk0p21	/recovery	emmc	defaults	defaults
+/dev/block/mmcblk1p1	/sdcard		vfat	defaults	defaults
+/dev/block/mmcblk0p36	/internal_sd	vfat	defaults	defaults
