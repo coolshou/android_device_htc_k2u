@@ -18,7 +18,7 @@ LISCENSE
 
 INFO
 ====
-Android device tree for HTC K2_CL (Boost LTE One SV) - Jellybean Branch
+Android device tree for HTC K2_UL (HTC One SV Asia & Europe)
 
 Known issues:
 Doesn't boot

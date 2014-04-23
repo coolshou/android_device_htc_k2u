@@ -16,6 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),k2_cl)
+ifeq ($(TARGET_DEVICE),k2_ul)
     include $(call first-makefiles-under,$(LOCAL_PATH))
 endif
