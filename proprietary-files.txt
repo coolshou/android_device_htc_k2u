@@ -201,6 +201,11 @@ bin/ATFWD-daemon
 lib/libacdbloader.so
 lib/libaudcal.so
 
+lib/bluez-plugin/network.so
+lib/bluez-plugin/input.so
+lib/bluez-plugin/bluetooth-health.so
+lib/bluez-plugin/audio.so
+
 # Camera
 lib/libchromatix_s5k3h2yx_default_video.so
 lib/libchromatix_s5k3h2yx_hdr.so
@@ -219,11 +224,14 @@ lib/liboemcamera.so
 lib/libposteffect.so
 
 # Graphics
-lib/egl/eglsubAndroid.so
-lib/egl/libEGL_adreno200.so
-lib/egl/libGLESv1_CM_adreno200.so
-lib/egl/libGLESv2_adreno200.so
 lib/egl/libq3dtools_adreno200.so
+lib/egl/libGLESv2_adreno200.so
+lib/egl/libGLESv2S3D_adreno200.so
+lib/egl/libGLESv1_CM_adreno200.so
+lib/egl/libGLES_android.so
+lib/egl/libEGL_adreno200.so
+lib/egl/eglsubAndroid.so
+lib/egl/egl.cfg
 lib/libC2D2.so
 lib/libc2d2_z180.so
 lib/libgsl.so
@@ -231,7 +239,24 @@ lib/libOpenVG.so
 lib/libsc-a2xx.so
 
 # GPS
+lib/hw/audio.r_submix.default.so
+lib/hw/sensors.msm8960.so
+lib/hw/power.default.so
+lib/hw/nfc.k2_u.so
+lib/hw/local_time.default.so
+lib/hw/lights.msm8960.so
+lib/hw/keystore.default.so
+lib/hw/hwcomposer.msm8960.so
+lib/hw/gralloc.msm8960.so
+lib/hw/gralloc.default.so
 lib/hw/gps.default.so
+lib/hw/copybit.msm8960.so
+lib/hw/camera.msm8960.so
+lib/hw/audio_policy.default.so
+lib/hw/audio.primary.msm8960.so
+lib/hw/audio.primary.default.so
+lib/hw/audio.a2dp.default.so
+lib/hw/alsa.msm8960.so
 lib/libgps.so
 lib/libgps.utils.so
 lib/libloc_adapter.so
@@ -262,6 +287,20 @@ etc/firmware/a225_pm4.fw
 etc/firmware/a225_pfp.fw
 etc/firmware/BCM4334B0_002.001.013.0942.0949.hcd
 
+vendor/firmware/mfg.bin
+vendor/firmware/libpn544_fw.so
+vendor/lib/drm/libdrmwvmplugin.so
+vendor/lib/libwvm.so
+vendor/lib/libwvdrm_L3.so
+vendor/lib/libWVStreamControlAPI_L3.so
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2/full_model.bin
+vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24/full_model.bin
+vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin
+vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin
+vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin
+
 # Qualcomm/HTC common libs
 lib/libdiag.so
 lib/libdsi_netctrl.so
@@ -281,3 +320,32 @@ lib/libnetmgr.so
 lib/libqc-opt.so
 lib/libril-qc-qmi-1.so
 lib/libril-qcril-hook-oem.so
+
+lib/drm/libhtcomaplugin.so
+lib/modules/spidev.ko
+lib/modules/scsi_wait_scan.ko
+lib/modules/reset_modem.ko
+lib/modules/qcrypto.ko
+lib/modules/qcedev.ko
+lib/modules/qce40.ko
+lib/modules/msm-buspm-dev.ko
+lib/modules/lcd.ko
+lib/modules/ks8851.ko
+lib/modules/gspca_main.ko
+lib/modules/evbug.ko
+lib/modules/eeprom_93cx6.ko
+lib/modules/dma_test.ko
+lib/modules/bluetooth-power.ko
+lib/modules/bcmdhd.ko
+lib/modules/ansi_cprng.ko
+lib/plugins/com.adobe.flashplayer/libysshared.so
+lib/plugins/com.adobe.flashplayer/libstagefright_honeycomb.so
+lib/plugins/com.adobe.flashplayer/libstagefright_froyo.so
+lib/plugins/com.adobe.flashplayer/libflashplayer.so
+lib/soundfx/libvisualizer.so
+lib/soundfx/libsrsfx.so
+lib/soundfx/libreverbwrapper.so
+lib/soundfx/libdownmix.so
+lib/soundfx/libbundlewrapper.so
+lib/soundfx/libaudiopreprocessing.so
+lib/ssl/engines/libkeystore.so
