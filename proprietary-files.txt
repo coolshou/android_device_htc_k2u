@@ -210,15 +210,12 @@ lib/libchromatix_s5k3h2yx_zsl.so
 lib/libcameraface.so
 lib/libcamerapp.so
 lib/libcam_oem_plugin.so
-lib/libDxOAF.so
 lib/libgemini.so
 lib/libmmcamera_frameproc.so
 lib/libmmcamera_rawchipproc.so
-lib/libmmcamera_statsproc30.so
 lib/libmmipl.so
 lib/libmmjpeg.so
 lib/liboemcamera.so
-lib/libOlaEngine.so
 lib/libposteffect.so
 
 # Graphics
@@ -243,12 +240,7 @@ lib/libloc_eng.so
 lib/libloc_ext.so
 
 # Media libraries
-lib/libmmosal.so
 lib/libmm-color-convertor.so
-lib/libmmparser.so
-lib/libmmparser_divxdrmlib.so
-lib/libwvm.so
-lib/libWVStreamControlAPI_L3.so
 
 etc/firmware/
 etc/firmware/vidcfw.elf
