@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_k2_ul.mk
+    $(LOCAL_DIR)/device_k2_u.mk
