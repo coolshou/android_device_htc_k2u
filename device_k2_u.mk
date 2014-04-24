@@ -44,7 +44,8 @@ PRODUCT_COPY_FILES += \
 
 # wifi config
 PRODUCT_COPY_FILES += \
-    device/htc/k2_u/configs/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf \
+    device/htc/k2_u/configs/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf \
+    device/htc/k2_u/configs/wifi/p2p_supplicant.conf:/system/etc/wifi/p2p_supplicant.conf \
     device/htc/k2_u/firmware/fw_bcm4334.bin:/system/etc/firmware/fw_bcm4334.bin \
     device/htc/k2_u/firmware/fw_bcm4334_apsta.bin:/system/etc/firmware/fw_bcm4334_apsta.bin \
     device/htc/k2_u/firmware/fw_bcm4334_p2p.bin:/system/etc/firmware/fw_bcm4334_p2p.bin \
