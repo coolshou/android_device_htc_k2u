@@ -237,12 +237,13 @@ lib/libc2d2_z180.so
 lib/libgsl.so
 lib/libOpenVG.so
 lib/libsc-a2xx.so
+lib/libsc-a3xx.so
 
 # GPS
 lib/hw/audio.r_submix.default.so
 lib/hw/sensors.msm8960.so
 lib/hw/power.default.so
-lib/hw/nfc.k2u.so
+lib/hw/nfc.k2_u.so
 lib/hw/local_time.default.so
 lib/hw/lights.msm8960.so
 lib/hw/keystore.default.so
@@ -267,7 +268,6 @@ lib/libloc_ext.so
 # Media libraries
 lib/libmm-color-convertor.so
 
-etc/firmware/
 etc/firmware/vidcfw.elf
 etc/firmware/vidc_1080p.fw
 etc/firmware/vidc.mdt
