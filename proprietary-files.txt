@@ -242,7 +242,7 @@ lib/libsc-a2xx.so
 lib/hw/audio.r_submix.default.so
 lib/hw/sensors.msm8960.so
 lib/hw/power.default.so
-lib/hw/nfc.k2_u.so
+lib/hw/nfc.k2u.so
 lib/hw/local_time.default.so
 lib/hw/lights.msm8960.so
 lib/hw/keystore.default.so

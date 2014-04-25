@@ -27,4 +27,4 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 # include the non-open-source counterpart to this file
--include vendor/htc/k2_u/AndroidBoardVendor.mk
+-include vendor/htc/k2u/AndroidBoardVendor.mk
