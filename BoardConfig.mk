@@ -53,7 +53,7 @@ BOARD_KERNEL_BASE := 0x80400000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01408000
 TARGET_KERNEL_SOURCE := kernel/htc/k2
-TARGET_KERNEL_CONFIG := k2u_defconfig
+TARGET_KERNEL_CONFIG := k2_u_defconfig
 
 # Use libril in the device tree
 #BOARD_PROVIDES_LIBRIL := true
