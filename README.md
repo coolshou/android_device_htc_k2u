@@ -20,10 +20,10 @@ INFO
 ====
 Android device tree for HTC K2_U (HTC One SV TW)
 
-Build issues:
-1. cm recovery build fail
-2. cm system build fail
+Build issues: <br>
+1. cm recovery build fail<br>
+2. cm system build fail<br>
 
-
-Known issues:
-1. Doesn't boot
+<br>
+Known issues: <br>
+1. Doesn't boot<br>
