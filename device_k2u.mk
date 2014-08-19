@@ -49,7 +49,8 @@ PRODUCT_COPY_FILES += \
     device/htc/k2u/firmware/fw_bcm4334.bin:/system/etc/firmware/fw_bcm4334.bin \
     device/htc/k2u/firmware/fw_bcm4334_apsta.bin:/system/etc/firmware/fw_bcm4334_apsta.bin \
     device/htc/k2u/firmware/fw_bcm4334_p2p.bin:/system/etc/firmware/fw_bcm4334_p2p.bin \
-    device/htc/k2u/firmware/BCM4334B0_002.001.013.0488.0604.hcd:/system/etc/firmware/BCM4334B0_002.001.013.0488.0604.hcd
+    device/htc/k2u/firmware/BCM4334B0_002.001.013.0942.0949.hcd:/system/etc/firmware/BCM4334B0_002.001.013.0942.0949.hcd    
+
 
 # Sound configs
 PRODUCT_COPY_FILES += \
@@ -150,7 +151,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
-PRODUCT_LOCALES += en_US hdpi
+PRODUCT_LOCALES += zh_TW hdpi
 
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/htc/k2u/k2u-vendor.mk)
