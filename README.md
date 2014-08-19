@@ -18,7 +18,12 @@ LISCENSE
 
 INFO
 ====
-Android device tree for HTC K2_UL (HTC One SV Asia & Europe)
+Android device tree for HTC K2_U (HTC One SV TW)
+
+Build issues:
+1. cm recovery build fail
+2. cm system build fail
+
 
 Known issues:
-Doesn't boot
+1. Doesn't boot
