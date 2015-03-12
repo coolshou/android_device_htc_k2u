@@ -17,5 +17,6 @@
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),k2u)
-    include $(call first-makefiles-under,$(LOCAL_PATH))
+#    include $(call first-makefiles-under,$(LOCAL_PATH))
+    include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

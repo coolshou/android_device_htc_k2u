@@ -15,4 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_k2u.mk
+    $(LOCAL_DIR)/aosp_k2u.mk
+#    $(LOCAL_DIR)/device_k2u.mk

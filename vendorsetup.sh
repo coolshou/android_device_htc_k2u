@@ -20,5 +20,8 @@
 # In particular, you can add lunch options with the add_lunch_combo
 # function: add_lunch_combo generic-eng
 
-add_lunch_combo cm_k2u-userdebug
-add_lunch_combo cm_k2u-eng
+#工程模式
+#add_lunch_combo aosp_k2u-eng
+add_lunch_combo aosp_k2u-userdebug
+#最終用戶版
+add_lunch_combo aosp_k2u-user
