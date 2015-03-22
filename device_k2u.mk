@@ -121,6 +121,7 @@ ifneq ($(TARGET_PREBUILT_KERNEL),)
 PRODUCT_COPY_FILES += \
     $(TARGET_PREBUILT_KERNEL):$(PRODUCT_OUT)kernel
 #modules    
+#path? 3.4.10-g415aa3e-dirty
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
     $(LOCAL_PATH)/prebuilt/modules/bcmdhd.ko:system/lib/modules/bcmdhd.ko \
@@ -198,10 +199,9 @@ PRODUCT_PACKAGES += \
     wpscli_test_cmd
 # wifi config
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant.conf:/system/etc/wifi/p2p_supplicant.conf \
     $(LOCAL_PATH)/etc/calibration:/system/etc/calibration 
-
+#    $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf 
 #Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor \
