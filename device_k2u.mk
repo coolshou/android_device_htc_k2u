@@ -151,7 +151,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/init.k2u.rc:root/init.k2u.rc \
     $(LOCAL_PATH)/ramdisk/init.goldfish.rc:root/init.goldfish.rc \
     $(LOCAL_PATH)/ramdisk/init.k2u.usb.rc:root/init.k2u.usb.rc \
-    $(LOCAL_PATH)/ramdisk/ueventd.target.rc:root/ueventd.target.rc \
+    $(LOCAL_PATH)/ramdisk/ueventd.k2u.rc:root/ueventd.k2u.rc \
     $(LOCAL_PATH)/ramdisk/initlogo.rle:root/initlogo.rle
 
 #TODO: recovery ramdisk
