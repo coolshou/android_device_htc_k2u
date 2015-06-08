@@ -76,7 +76,8 @@ htc.audio.swalt.enable=1
 htc.audio.swalt.mingain=14512
 htc.audio.alc.enable=1
 # System props for soundhound
-persist.htc.audio.pcm.samplerate=48000
+#aosp 5.1 error: "cannot exceed 31 bytes"
+#persist.htc.audio.pcm.samplerate=48000
 persist.htc.audio.pcm.channels=2
 
 #system props for the MM modules
@@ -149,10 +150,12 @@ service.brcm.bt.srv_active = 0
 service.brcm.bt.hcid_active = 0
 service.brcm.bt.btld = 0
 service.brcm.bt.btld_pid = 0
-service.brcm.bt.avrcp_pass_thru = 0
+#aosp 5.1 error: "cannot exceed 31 bytes"
+#service.brcm.bt.avrcp_pass_thru = 0
 service.brcm.bt.avrcp_toggle = 1
 service.brcm.bt.local_name =
-service.brcm.bt.FTS_ROOT_FOLDER = /storage
+#aosp 5.1 error: "cannot exceed 31 bytes"
+#service.brcm.bt.FTS_ROOT_FOLDER = /storage
 service.brcm.bt.TRC_HTCSDBG = 1
 ro.bt.ble_tag = 1
 
