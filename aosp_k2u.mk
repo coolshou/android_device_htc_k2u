@@ -41,7 +41,7 @@ PRODUCT_NAME := aosp_k2u
 #PRODUCT_RESTRICT_VENDOR_FILES := true
 
 #with following line, the system.img & userdata.img will be in full size like AOSP x86 image
-system.img size = BOARD_SYSTEMIMAGE_PARTITION_SIZE
+# system.img size = BOARD_SYSTEMIMAGE_PARTITION_SIZE
 # userdata.img size = BOARD_USERDATAIMAGE_PARTITION_SIZE
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 
