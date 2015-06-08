@@ -407,7 +407,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 #screen dpi:  ldpi (low), mdpi (medium), hdpi (high), xhdpi (extra high, API 8), xlarge (API 9)
 #PRODUCT_AAPT_CONFIG := normal hdpi
 #PRODUCT_AAPT_PREF_CONFIG := hdpi
-PRODUCT_LOCALES := zh_TW
+PRODUCT_LOCALES := zh_TW hdpi
 
 #jimmy, add nobootanimation for debug
 PRODUCT_PROPERTY_OVERRIDES += \
