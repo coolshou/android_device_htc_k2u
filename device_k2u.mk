@@ -40,6 +40,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 #    frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
 #    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
 #    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
+# Permissions
+#PRODUCT_COPY_FILES += \
+#    frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
+#    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
+#    frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
+#    frameworks/native/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
+#    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
+#    frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
+#    frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
+#    frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml 
+
+#    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -83,6 +95,20 @@ PRODUCT_PACKAGES += \
 # sensors
 PRODUCT_PACKAGES += \
     sensors.msm8960
+
+#BMA250 3-axis Accelerometer (Bosh); range: 0...39.24; resolution: 0.153 (0.391%); power: 0.1mA;
+#CM36282 Proximity sensor (Capella Microsystems); range: 0...9; resolution: 9 (100%); power: 0.18mA;
+#CM36282 Light sensor (Capella Microsystems); range: 0...10240; resolution: 1 (0.01%); power: 0.15mA;
+
+#AK8975 3-axis Magnetic field sensor (Asahi Kasei); range: 0...2000; resolution: 0.062 (0.003%); power: 5mA;
+#akm8975 : Auto rotate feature/查詢重力感應器狀態
+AKMD_DEVICE_TYPE := 8975
+PRODUCT_PACKAGES += \
+    akmd \
+    akmdfs
+
+PRODUCT_PACKAGES += \
+    libharfbuzz
 
 # camera
 PRODUCT_PACKAGES += \
@@ -312,18 +338,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Torch
 
-# Permissions
-#PRODUCT_COPY_FILES += \
-#    frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
-#    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-#    frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
-#    frameworks/native/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
-#    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
-#    frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
-#    frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
-#    frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml 
-
-#    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
 
 #fix sdcard Permissions  
 #PRODUCT_COPY_FILES += \
@@ -368,14 +382,6 @@ PRODUCT_PACKAGES += \
     ipv6tether \
     zchgd
     
-#akm8975 : Auto rotate feature/查詢重力感應器狀態
-AKMD_DEVICE_TYPE := 8975
-PRODUCT_PACKAGES += \
-    akmd \
-    akmdfs
-
-PRODUCT_PACKAGES += \
-    libharfbuzz
 
 #OVERRIDE_RUNTIMES:=runtime_libart runtime_libdvm_default 
 
@@ -404,14 +410,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Device uses high-density artwork where available
 #AAPT: android assert packaging tool
 #screen size: small, normal, large, and xlarge
-#screen dpi:  ldpi (low), mdpi (medium), hdpi (high), xhdpi (extra high, API 8), xlarge (API 9)
+#screen dpi:  ldpi (low 120), mdpi (medium 160), hdpi (high 240), xhdpi (extra high 320, API 8), xlarge (API 9)
 #PRODUCT_AAPT_CONFIG := normal hdpi
 #PRODUCT_AAPT_PREF_CONFIG := hdpi
-PRODUCT_LOCALES := zh_TW hdpi
+PRODUCT_LOCALES := zh_TW en_US hdpi
 
 #jimmy, add nobootanimation for debug
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.nobootanimation = 1 
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    debug.sf.nobootanimation = 1 
 
 #    hw.lcd.width = 480 \
 #    hw.lcd.height = 800 \
