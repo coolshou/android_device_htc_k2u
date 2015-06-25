@@ -43,7 +43,7 @@ PRODUCT_NAME := aosp_k2u
 #with following line, the system.img & userdata.img will be in full size like AOSP x86 image
 # system.img size = BOARD_SYSTEMIMAGE_PARTITION_SIZE
 # userdata.img size = BOARD_USERDATAIMAGE_PARTITION_SIZE
-TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
+#TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 
 #eng版本要生成odex的话，那么只需要把WITH_DEXPREOPT := true ；
 WITH_DEXPREOPT := true
